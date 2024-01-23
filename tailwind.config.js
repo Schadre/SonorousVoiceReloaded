@@ -37,4 +37,19 @@ module.exports = {
     },
   },
   plugins: [],
+  module: {
+    rules: [
+      {
+        test: /\.(mp3)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: 'assets/audio/[name].[ext]', // Output path for MP3 files
+            },
+          },
+        ],
+      },
+    ],
+  },
 };

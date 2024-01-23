@@ -3,12 +3,13 @@ import Sidebar from "../Components/Sidebar";
 import Sonorousvoicelogo from "../Assets/Images/Sonorousvoicelogo.png";
 import TestimonialCard from "../Components/TestimonialCard";
 import AudioPlayer from "../Components/AudioPlayer";
-import audio1 from "../Assets/VoiceOvers/ArthurDentN1.mp3";
-import audio2 from "../Assets/VoiceOvers/ArthurDentC2.mp3";
+import audio1 from "../Assets/VoiceOvers/ArthurDent1.mp3";
+import audio2 from "../Assets/VoiceOvers/ArthurDent2.mp3";
 import Netflix from "../Assets/Images/Netflix.png";
 import OldDads from "../Assets/Images/Old Dads.jpeg"
 import Epic from "../Assets/Images/Epic.png";
 import Whisper from "../Assets/Images/WRLogoBlacknoBackground-vector.svg";
+
 
 const testimonials = [
   {
