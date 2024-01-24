@@ -1,8 +1,4 @@
 // types.ts
-
-export interface VoiceNote {
-    src: string;
-  }
   
   export interface Testimonial {
     personName: string;

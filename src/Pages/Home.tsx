@@ -2,14 +2,13 @@ import React from "react";
 import Sidebar from "../Components/Sidebar";
 import Sonorousvoicelogo from "../Assets/Images/Sonorousvoicelogo.png";
 import TestimonialCard from "../Components/TestimonialCard";
-import AudioPlayer from "../Components/AudioPlayer";
 import audio1 from "../Assets/VoiceOvers/ArthurDent1.mp3";
 import audio2 from "../Assets/VoiceOvers/ArthurDent2.mp3";
 import Netflix from "../Assets/Images/Netflix.png";
-import OldDads from "../Assets/Images/Old Dads.jpeg"
+import OldDads from "../Assets/Images/Old Dads.jpeg";
 import Epic from "../Assets/Images/Epic.png";
 import Whisper from "../Assets/Images/WRLogoBlacknoBackground-vector.svg";
-
+import ReactAudioPlayer from "react-audio-player";
 
 const testimonials = [
   {
@@ -34,6 +33,8 @@ const testimonials = [
   },
 ];
 
+const isPlaying = false;
+
 function Home() {
   return (
     <>
@@ -47,7 +48,17 @@ function Home() {
               className="mx-auto w-full md:1/2 lg:w-9/12"
             />
           </div>
-          <AudioPlayer audioSrc={[audio1, audio2]} />
+          <section className="justify-center p-10">
+            <h1 className=" text text-center font-bold text-brown-400 text-4xl mb-5">
+              Demos
+            </h1>
+            <div className="flex justify-center">
+              <ReactAudioPlayer className="mb-1" src={audio1} autoPlay={isPlaying} controls/>
+            </div>
+            <div className="flex justify-center">
+              <ReactAudioPlayer src={audio2} autoPlay={isPlaying} controls />
+            </div>
+          </section>
 
           <section className="flex flex-wrap justify-center p-4 mb-10 gap-2">
             {testimonials.map((testimonial, index) => (

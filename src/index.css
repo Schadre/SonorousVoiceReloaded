@@ -10,7 +10,6 @@ body{
   background-color: #FFF2D7;
 }
 
-
 .logo-container {
   display: flex;
   justify-content: center;
@@ -19,10 +18,8 @@ body{
 }
 
 @media (max-width: 768px) {
-  /* Styles for screens with a maximum width of 768px */
   .sidebar {
-    /* Adjust the width as needed for mobile */
-    width: 100%; /* You can change the width value */
+    width: 100%; 
   }
 }
 
