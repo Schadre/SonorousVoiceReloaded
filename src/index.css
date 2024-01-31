@@ -17,11 +17,20 @@ body{
   padding: 10px;
 }
 
+.rhap_main-controls button {
+  color: #752330;
+}
+
+.rhap_container {
+  box-shadow: none !important;
+}
+
 @media (max-width: 768px) {
   .sidebar {
     width: 100%; 
   }
 }
+
 
 
 

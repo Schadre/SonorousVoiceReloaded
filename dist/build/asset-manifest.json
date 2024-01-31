@@ -1,26 +1,34 @@
 {
   "files": {
-    "main.css": "/static/css/main.8a41b10f.css",
-    "main.js": "/static/js/main.c42dcca7.js",
+    "main.css": "/static/css/main.c4a00280.css",
+    "main.js": "/static/js/main.11e476ce.js",
+    "static/media/Navbar.wav": "/static/media/Navbar.e0f40d622e94470aa7fc.wav",
     "static/media/Mic2.jpeg": "/static/media/Mic2.2c2c8312963da81bcd2d.jpeg",
-    "static/media/ArthurDentN1.mp3": "/static/media/ArthurDentN1.a64029dbd5a25bc81e06.mp3",
-    "static/media/ArthurDentC2.mp3": "/static/media/ArthurDentC2.ae20ae4dd109f4289bf4.mp3",
-    "static/media/Mic.jpeg": "/static/media/Mic.3e456a9ca69696f86ee3.jpeg",
+    "static/media/ArthurDent1.mp3": "/static/media/ArthurDent1.a64029dbd5a25bc81e06.mp3",
+    "static/media/ArthurDent2.mp3": "/static/media/ArthurDent2.ae20ae4dd109f4289bf4.mp3",
+    "static/media/fa-solid-900.ttf": "/static/media/fa-solid-900.45a265d0f07b31cde85f.ttf",
+    "static/media/fa-brands-400.ttf": "/static/media/fa-brands-400.6205fd00fb1b573e9f0f.ttf",
     "static/media/Video.jpeg": "/static/media/Video.493886415bc3632ebd6e.jpeg",
+    "static/media/fa-solid-900.woff2": "/static/media/fa-solid-900.fb8184add5a3101ad0a3.woff2",
     "static/media/Fun.jpg": "/static/media/Fun.55554c5f4807b0a17926.jpg",
+    "static/media/fa-brands-400.woff2": "/static/media/fa-brands-400.8d3cabfc66809162fb4d.woff2",
     "static/media/Uniform.png": "/static/media/Uniform.8af5b7a32b26577e12da.png",
     "static/media/Family.png": "/static/media/Family.576b4b0c2ec99aa28f98.png",
     "static/media/Sonorousvoicelogo.png": "/static/media/Sonorousvoicelogo.e71a164f3c066ecb89d1.png",
     "static/media/Old Dads.jpeg": "/static/media/Old Dads.ab0d2e9518f00dd2da47.jpeg",
+    "static/media/fa-regular-400.ttf": "/static/media/fa-regular-400.adc51aab4d771ab65f81.ttf",
     "static/media/Netflix.png": "/static/media/Netflix.8ce5c9ccc9cd7a0d538f.png",
+    "static/media/fa-regular-400.woff2": "/static/media/fa-regular-400.e931bc0d14f5bbb1da22.woff2",
     "static/media/WRLogoBlacknoBackground-vector.svg": "/static/media/WRLogoBlacknoBackground-vector.5bfa4ba774b0a4b1322d84f3f6e7ba1e.svg",
+    "static/media/fa-v4compatibility.ttf": "/static/media/fa-v4compatibility.2eb7b3ef25042305f3ff.ttf",
     "static/media/Epic.png": "/static/media/Epic.6c9b70ad6eeffaadd52e.png",
+    "static/media/fa-v4compatibility.woff2": "/static/media/fa-v4compatibility.b3049b13a93f07e026fc.woff2",
     "index.html": "/index.html",
-    "main.8a41b10f.css.map": "/static/css/main.8a41b10f.css.map",
-    "main.c42dcca7.js.map": "/static/js/main.c42dcca7.js.map"
+    "main.c4a00280.css.map": "/static/css/main.c4a00280.css.map",
+    "main.11e476ce.js.map": "/static/js/main.11e476ce.js.map"
   },
   "entrypoints": [
-    "static/css/main.8a41b10f.css",
-    "static/js/main.c42dcca7.js"
+    "static/css/main.c4a00280.css",
+    "static/js/main.11e476ce.js"
   ]
 }

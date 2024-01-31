@@ -1,16 +1,27 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Sidebar from "../Components/Sidebar";
 import Sonorousvoicelogo from "../Assets/Images/Sonorousvoicelogo.png";
 import TestimonialCard from "../Components/TestimonialCard";
 import audio1 from "../Assets/VoiceOvers/ArthurDent1.mp3";
 import audio2 from "../Assets/VoiceOvers/ArthurDent2.mp3";
+import audio3 from "../Assets/VoiceOvers/Navbar.wav";
 import Netflix from "../Assets/Images/Netflix.png";
 import OldDads from "../Assets/Images/Old Dads.jpeg";
 import Epic from "../Assets/Images/Epic.png";
 import Whisper from "../Assets/Images/WRLogoBlacknoBackground-vector.svg";
-import ReactAudioPlayer from "react-audio-player";
+import "react-h5-audio-player/lib/styles.css";
+import AudioPlayer, { RHAP_UI } from "react-h5-audio-player";
+import "../index.css";
+import '@fortawesome/fontawesome-free/css/all.css';
 
 const testimonials = [
+  {
+    personName: "Rob McClure",
+    businessName: `Track Change Thrive`,
+    position: "Owner/CEO",
+    testimonial: `
+    Art was amazing!  He was professional, timely, and very dedicated to my project.  I am extremely happy with his services and plan to use him in the future.`,
+  },
   {
     personName: "Gabe White",
     businessName: `WhisperRoom, Inc.`,
@@ -33,13 +44,33 @@ const testimonials = [
   },
 ];
 
-const isPlaying = false;
-
 function Home() {
+  const audioTracks = [audio3, audio1, audio2];
+  const [currentTrackIndex, setCurrentTrackIndex] = useState(0);
+  const [sidebarVisible, setSidebarVisible] = useState(false);
+
+  const playNextTrack = () => {
+    setCurrentTrackIndex((prevIndex) =>
+      prevIndex < audioTracks.length - 1 ? prevIndex + 1 : 0
+    );
+  };
+
+  const toggleSidebar = () => {
+    setSidebarVisible(!sidebarVisible);
+  };
+
   return (
     <>
-      <div className="flex">
-        <Sidebar />
+      <div className="flex"> 
+        {sidebarVisible && <Sidebar />}
+        <div
+          className="cursor-pointer hamburger-icon"
+          onClick={toggleSidebar}
+          style={{ fontSize: "24px", padding: "1px" , color: "#140c0A" }}
+          title="Menu"
+        >
+          <i className="fas fa-caret-right"></i>
+        </div>
         <div className="flex-2 h-fit w-fit-content justify-center">
           <div className="logo-container mt-10 mb-10">
             <img
@@ -53,10 +84,18 @@ function Home() {
               Demos
             </h1>
             <div className="flex justify-center">
-              <ReactAudioPlayer className="mb-1" src={audio1} autoPlay={isPlaying} controls/>
-            </div>
-            <div className="flex justify-center">
-              <ReactAudioPlayer src={audio2} autoPlay={isPlaying} controls />
+              <section>
+                <AudioPlayer
+                  className="shadow-none"
+                  src={audioTracks[currentTrackIndex]}
+                  onEnded={playNextTrack}
+                  style={{
+                    backgroundColor: "#FFF2D7",
+                  }}
+                  customProgressBarSection={[RHAP_UI.MAIN_CONTROLS]}
+                  customControlsSection={[]}
+                />
+              </section>
             </div>
           </section>
 

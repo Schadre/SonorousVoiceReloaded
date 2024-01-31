@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Sidebar from "../Components/Sidebar";
 import Sonorousvoicelogo from "../Assets/Images/Sonorousvoicelogo.png";
 import Love from "../Assets/Images/Family.png";
@@ -6,10 +6,24 @@ import Unifrom from "../Assets/Images/Uniform.png";
 import Fun from "../Assets/Images/Fun.jpg";
 
 function About() {
+  const [sidebarVisible, setSidebarVisible] = useState(false);
+
+  const toggleSidebar = () => {
+    setSidebarVisible(!sidebarVisible);
+  };
+  
   return (
     <>
       <div className="flex">
-        <Sidebar />
+      {sidebarVisible && <Sidebar />}
+        <div
+          className={`cursor-pointer hamburger-icon `}
+          onClick={toggleSidebar}
+          style={{ fontSize: "24px", padding: "1px", color: "#140c0A" }}
+          title="Menu"
+        >
+          <i className="fas fa-caret-right"></i>
+        </div>
         <div className="flex-2 h-fit w-fit-content justify-center">
           <div className="logo-container mt-10 mb-10">
             <img

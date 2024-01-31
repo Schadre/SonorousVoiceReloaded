@@ -1,14 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import Sidebar from "../Components/Sidebar";
 import Sonorousvoicelogo from "../Assets/Images/Sonorousvoicelogo.png";
 import Mic from "../Assets/Images/Mic2.jpeg"
 import Camera from "../Assets/Images/Video.jpeg"
 
 function Podcast() {
+  const [sidebarVisible, setSidebarVisible] = useState(false);
+
+  const toggleSidebar = () => {
+    setSidebarVisible(!sidebarVisible);
+  };
+  
   return (
     <>
       <div className="flex">
-        <Sidebar />
+      {sidebarVisible && <Sidebar />}
+        <div
+          className="cursor-pointer hamburger-icon"
+          onClick={toggleSidebar}
+          style={{ fontSize: "24px", padding: "1px", color: "#140c0A" }}
+          title="Menu"
+        > 
+          <i className="fas fa-caret-right"></i>
+        </div>
         <div className="flex-2 h-fit w-fit-content justify-center">
           <div className="logo-container mt-10 mb-10">
             <img

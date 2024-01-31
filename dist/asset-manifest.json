@@ -1,11 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.8a41b10f.css",
-    "main.js": "/static/js/main.c42dcca7.js",
+    "main.css": "/static/css/main.c9da4984.css",
+    "main.js": "/static/js/main.68188d9e.js",
     "static/media/Mic2.jpeg": "/static/media/Mic2.2c2c8312963da81bcd2d.jpeg",
-    "static/media/ArthurDentN1.mp3": "/static/media/ArthurDentN1.a64029dbd5a25bc81e06.mp3",
-    "static/media/ArthurDentC2.mp3": "/static/media/ArthurDentC2.ae20ae4dd109f4289bf4.mp3",
-    "static/media/Mic.jpeg": "/static/media/Mic.3e456a9ca69696f86ee3.jpeg",
+    "static/media/ArthurDent1.mp3": "/static/media/ArthurDent1.a64029dbd5a25bc81e06.mp3",
+    "static/media/ArthurDent2.mp3": "/static/media/ArthurDent2.ae20ae4dd109f4289bf4.mp3",
     "static/media/Video.jpeg": "/static/media/Video.493886415bc3632ebd6e.jpeg",
     "static/media/Fun.jpg": "/static/media/Fun.55554c5f4807b0a17926.jpg",
     "static/media/Uniform.png": "/static/media/Uniform.8af5b7a32b26577e12da.png",
@@ -16,11 +15,11 @@
     "static/media/WRLogoBlacknoBackground-vector.svg": "/static/media/WRLogoBlacknoBackground-vector.5bfa4ba774b0a4b1322d84f3f6e7ba1e.svg",
     "static/media/Epic.png": "/static/media/Epic.6c9b70ad6eeffaadd52e.png",
     "index.html": "/index.html",
-    "main.8a41b10f.css.map": "/static/css/main.8a41b10f.css.map",
-    "main.c42dcca7.js.map": "/static/js/main.c42dcca7.js.map"
+    "main.c9da4984.css.map": "/static/css/main.c9da4984.css.map",
+    "main.68188d9e.js.map": "/static/js/main.68188d9e.js.map"
   },
   "entrypoints": [
-    "static/css/main.8a41b10f.css",
-    "static/js/main.c42dcca7.js"
+    "static/css/main.c9da4984.css",
+    "static/js/main.68188d9e.js"
   ]
 }
