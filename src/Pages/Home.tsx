@@ -44,8 +44,13 @@ const testimonials = [
   },
 ];
 
+const audioTracks = [
+  { name: "The Love Doctor", src: audio3 },
+  { name: "Commerical Deluxe", src: audio1 },
+  { name: "Commerical Gold", src: audio2 },
+];
+
 function Home() {
-  const audioTracks = [audio3, audio1, audio2];
   const [currentTrackIndex, setCurrentTrackIndex] = useState(0);
   const [sidebarVisible, setSidebarVisible] = useState(false);
 
@@ -83,12 +88,15 @@ function Home() {
             <h1 className=" text text-center font-bold text-brown-400 text-4xl mb-5">
               Demos
             </h1>
-            <div className="flex justify-center">
-              <section>
+            <div className="flex flex-col justify-center items-center">
+            {audioTracks.map((track, index) => (
+              <section key={index}>
+                <p className="text-brown-400 text-center">{track.name}</p>
                 <AudioPlayer
                   className="shadow-none"
-                  src={audioTracks[currentTrackIndex]}
+                  src={track.src}
                   onEnded={playNextTrack}
+                  autoPlay={false}
                   style={{
                     backgroundColor: "#FFF2D7",
                   }}
@@ -96,6 +104,7 @@ function Home() {
                   customControlsSection={[]}
                 />
               </section>
+            ))}
             </div>
           </section>
 
